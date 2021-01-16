@@ -152,3 +152,8 @@ EMAIL_HOST_USER = 'dossosoualiho@gmail.com'
 EMAIL_HOST_PASSWORD = 'ndsojfslbxuzlohc'
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'default from email'
+
+try:
+    from .local_settings import*
+except ImportError:
+    pass
